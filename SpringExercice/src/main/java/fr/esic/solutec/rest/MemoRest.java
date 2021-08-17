@@ -51,4 +51,10 @@ public class MemoRest {
 		} else
 			return false;
 	}
+	
+	// Récupérer les mémos reçus
+	@GetMapping("memo/received/{id}")
+	public List<Memo> getReceivedMemo(@PathVariable Long id) {
+		return memoRepo.findByReceiverId(id);
+	}
 }
