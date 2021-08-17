@@ -29,7 +29,10 @@ public class Memo {
 	private Timestamp dateCreation;
 	
 	@ManyToOne
-	private User user;
+	private User sender;
+	
+	@ManyToOne
+	private User receiver;
 	
 	@Value("${publicMemo:false}")
 	private boolean publicMemo;

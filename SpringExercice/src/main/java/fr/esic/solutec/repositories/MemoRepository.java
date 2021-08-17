@@ -8,6 +8,6 @@ import fr.esic.solutec.entities.Memo;
 
 public interface MemoRepository extends CrudRepository<Memo, Long> {
 	
-	public List<Memo> findByUserId(Long id);
+	public List<Memo> findBySenderId(Long id);
 	
 }
