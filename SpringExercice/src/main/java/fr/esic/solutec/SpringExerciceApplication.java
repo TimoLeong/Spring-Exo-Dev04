@@ -25,6 +25,7 @@ public class SpringExerciceApplication implements CommandLineRunner{
 		
 		UserRepo.save(new User(null, "test", "123", "Hirasawa", "Yui"));
 		UserRepo.save(new User(null, "login", "azerty", "Kevin", "Jean"));
+		UserRepo.save(new User(null, "yo", "qwerty", "Kagura", "Hikari"));
 		
 	}
 	
