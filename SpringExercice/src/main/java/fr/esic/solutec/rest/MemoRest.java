@@ -57,4 +57,9 @@ public class MemoRest {
 	public List<Memo> getReceivedMemo(@PathVariable Long id) {
 		return memoRepo.findByReceiverId(id);
 	}
+	
+	@GetMapping("memo/public")
+	public List<Memo> getPublicMemo() {
+		return memoRepo.findByPublicMemoTrue();
+	}
 }
