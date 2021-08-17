@@ -25,7 +25,7 @@ public class MemoRest {
 	// Un user peut voir ses notes rapides (style memo). (/memo/user/{idUser}): get
 	@GetMapping("memo/user/{idUser}")
 	public List<Memo> getUserMemo(@PathVariable Long idUser){
-		return memoRepo.findByUserId(idUser);
+		return memoRepo.findBySenderId(idUser);
 	}
 	
 	// Un user peut laisser une note a l'attention d'un autre utilisateur
